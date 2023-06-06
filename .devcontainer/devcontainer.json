@@ -14,7 +14,7 @@
     },
     "customizations": {
         "codespaces": {
-            "openFiles": ["README.md", "vignettes/rectangle.Rmd"]
+            "openFiles": ["README.md", "vignettes/nest.Rmd"]
         }
     }
 }
