@@ -1,0 +1,20 @@
+{
+    "name": "R (rocker/r-ver base) 4.3",
+    "image": "ghcr.io/rocker-org/devcontainer/r-ver:4.3",
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:latest": {
+            "packages": "libudunits2-dev,libxtst6,libxt6,libmagick++-dev"
+        },
+        "ghcr.io/rocker-org/devcontainer-features/r-packages:latest": {
+            "packages": "tidyverse,here,httpgd,dplyr,devtools,rmarkdown,tidyr"
+        }
+    },
+    "remoteEnv": {
+        "PKG_SYSREQS": "true"
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": ["README.md", "vignettes/rectangle.Rmd"]
+        }
+    }
+}
